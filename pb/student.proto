@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option go_package = "ludete/test_pb/student";
+package student;
+
+message student{
+  person name = 1;
+  int32 class = 2;
+}
+
+message person{
+	string name = 1;
+	int32 age = 2;
+}
